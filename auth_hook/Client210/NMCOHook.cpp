@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include <shlwapi.h>
+#pragma comment(lib, "shlwapi.lib")
 
 #define BUF_SIZE 2048
 
