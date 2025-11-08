@@ -243,6 +243,11 @@ namespace MoonlightLauncher
                 return flag;
             }
 
+            string dataWzFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Data.wz");
+            if (File.Exists(dataWzFilePath)) {
+                File.Delete(dataWzFilePath);
+            }
+
             // Don't need to checksum these files.
             string[] wz_ignore = { "Effect", "Sound", "Morph", "Reactor", "String", "TamingMob", "Base" };
 
